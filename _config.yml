@@ -80,7 +80,7 @@ theme_mode: # [light|dark]
 img_cdn: "https://cdn.jsdelivr.net"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/gh/comeback829/picture/avatar.png"
+avatar: "/gh/comeback829/picture/avatar/avaimage.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
