@@ -37,7 +37,7 @@ l(y,y\prime)=\begin{cases}
 $$
 
 4. 图像分类数据集 
-
+                                                      
 ```python
 mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True(表示训练数据集), transform=trans,出来是以张量形式读取 download=True)
 ```
