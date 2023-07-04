@@ -4,6 +4,7 @@ date: 2023-06-29 +0800
 categories: [Machine Learning]
 tags: [studynotes]   
 math: true
+
 ---
 ## 课堂内容
 
@@ -23,7 +24,7 @@ $$
 
   ​	 b. L1 loss
 $$
-  l(y,y\prime)=|y-y\prime|
+l(y,y\prime)=|y-y\prime|
 $$
   ​		步幅稳定但原点处不可导且突变
 
@@ -36,21 +37,27 @@ l(y,y\prime)=\begin{cases}
 $$
 
 4. 图像分类数据集 
-    mnist_train = torchvision.datasets.FashionMNIST(
-   root="../data", train=True(表示训练数据集), transform=trans,出来是以张量形式读取 download=True)
-   **dataloader** 
+
+```python
+mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True(表示训练数据集), transform=trans,出来是以张量形式读取 download=True)
+```
+
+ **dataloader** 
 
 5. 从零实现softmax
 
-   a. 对矩阵进行softmax操作
+​		a. 对矩阵进行softmax操作
 
-   ​	为什么是矩阵：因为是批量操作，本来1维度，多了batch_size的第二维度
-   b. [高级索引](https://www.runoob.com/numpy/numpy-advanced-indexing.html)
-   
-   c. 一行代码实现交叉熵
-   $x_a$
-   ​	y是一个一维数组, $y_i$ 表示每一个样本中
-   
-   
+​			为什么是矩阵：因为是批量操作，本来1维度，多了batch_size的第二维度
+
+​		b. [高级索引](https://www.runoob.com/numpy/numpy-advanced-indexing.html)
+
+​		c. 一行代码实现交叉熵
+​			y是一个一维数组, $y_i$ 的值表示第i个样本中正确的分类是第几项
+
+```python 
+-torch.log(y_hat[range(len(y_hat)), y])
+```
+
 
 ## 作业
