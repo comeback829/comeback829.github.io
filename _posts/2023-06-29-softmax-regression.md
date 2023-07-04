@@ -28,6 +28,7 @@ $\qquad$ b. L1 loss
 $$
 l(y,y\prime)=|y-y\prime|
 $$
+
 $\qquad$$\qquad$ 步幅稳定但原点处不可导且突变
 
 $\qquad$ c. Huber's Robust Loss
@@ -38,9 +39,7 @@ l(y,y\prime)=\begin{cases}
   l(y,y\prime)=|y-y\prime|&otherwise
   \end{cases}
 $$
-
-
-
+$\qquad$
 4. 图像分类数据集
 
    ```python
