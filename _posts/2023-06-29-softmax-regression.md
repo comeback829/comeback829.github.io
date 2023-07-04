@@ -22,15 +22,15 @@ $$
 l(y,y\prime)=\frac{1}{2}{(y-y\prime)}^2
 $$
 
-​				离原点近时，逼近步幅太大
+$\qquad$$\qquad$ 离原点近时，逼近步幅太大
 
-​			b. L1 loss
+$\qquad$ b. L1 loss
 $$
 l(y,y\prime)=|y-y\prime|
 $$
-​				步幅稳定但原点处不可导且突变
+$\qquad$$\qquad$ 步幅稳定但原点处不可导且突变
 
-​         	c. Huber's Robust Loss
+$\qquad$ c. Huber's Robust Loss
 
 $$
 l(y,y\prime)=\begin{cases}
