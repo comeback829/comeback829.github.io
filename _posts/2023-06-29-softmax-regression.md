@@ -36,13 +36,11 @@ l(y,y\prime)=\begin{cases}
   \end{cases}
 $$
 
-4. 图像分类数据集 
-                                                      
-```python
-mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True(表示训练数据集), transform=trans,出来是以张量形式读取 download=True)
-```
+4. 图像分类数据集
 
- **dataloader** 
+   ```python
+   mnist_train =torchvision.datasets.FashionMNIST(root="../data",train=True(表示训练数据集), transform=trans,出来是以张量形式读取 download=True)
+   ```
 
 5. 从零实现softmax
 
