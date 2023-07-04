@@ -16,19 +16,22 @@ math: true
 
 3. 损失函数
 
-  ​	a. L2 loss
-$$
-  l(y,y\prime)=\frac{1}{2}{(y-y\prime)}^2
-$$
-  ​		离原点远时，逼近步幅太大
+​		a. L2 loss
 
-  ​	 b. L1 loss
+$$
+l(y,y\prime)=\frac{1}{2}{(y-y\prime)}^2
+$$
+
+​			离原点近时，逼近步幅太大
+
+​		b. L1 loss
 $$
 l(y,y\prime)=|y-y\prime|
 $$
-  ​		步幅稳定但原点处不可导且突变
+​		步幅稳定但原点处不可导且突变
 
-  ​	 c. Huber's Robust Loss
+​         c. Huber's Robust Loss
+
 $$
 l(y,y\prime)=\begin{cases}
   l(y,y\prime)=\frac{1}{2}{(y-y\prime)}^2& if|y-y\prime|>1\\
@@ -56,6 +59,5 @@ $$
 ```python 
 -torch.log(y_hat[range(len(y_hat)), y])
 ```
-
 
 ## 作业
