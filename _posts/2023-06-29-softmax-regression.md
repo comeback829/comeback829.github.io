@@ -25,6 +25,7 @@ $$
 $\qquad$$\qquad$ 离原点近时，逼近步幅太大
 
 $\qquad$ b. L1 loss
+
 $$
 l(y,y\prime)=|y-y\prime|
 $$
@@ -39,26 +40,28 @@ l(y,y\prime)=\begin{cases}
   l(y,y\prime)=|y-y\prime|&otherwise
   \end{cases}
 $$
+
 $\qquad$
+
 4. 图像分类数据集
 
-   ```python
-   mnist_train =torchvision.datasets.FashionMNIST(root="../data",train=True(表示训练数据集), transform=trans,出来是以张量形式读取 download=True)
-   ```
+```python
+mnist_train =torchvision.datasets.FashionMNIST(root="../data",train=True(表示训练数据集), transform=trans,出来是以张量形式读取 download=True)
+```
 
 5. 从零实现softmax
 
-​		a. 对矩阵进行softmax操作
+$\qquad$a. 对矩阵进行softmax操作
 
-​			为什么是矩阵：因为是批量操作，本来1维度，多了batch_size的第二维度
+$\qquad$$\qquad$为什么是矩阵：因为是批量操作，本来1维度，多了batch_size的第二维度
 
-​		b. [高级索引](https://www.runoob.com/numpy/numpy-advanced-indexing.html)
+$\qquad$b. [高级索引](https://www.runoob.com/numpy/numpy-advanced-indexing.html)
 
-​		c. 一行代码实现交叉熵
-​			y是一个一维数组, $y_i$ 的值表示第i个样本中正确的分类是第几项
+$\qquad$c. 一行代码实现交叉熵
+$\qquad$$\qquad$y是一个一维数组, $y_i$ 的值表示第i个样本中正确的分类是第几项
 
 ```python 
 -torch.log(y_hat[range(len(y_hat)), y])
 ```
-
+6. `nn.Sequential()` 快速构建神经网络的序列容器
 ## 作业
