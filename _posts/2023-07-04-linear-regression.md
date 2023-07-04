@@ -9,5 +9,11 @@ math: true
 
 1. 训练模型
 
+   ```python
+   import pytorch as torch
+   ```
+
+   
+
 ## 作业 
 
