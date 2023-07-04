@@ -16,7 +16,7 @@ math: true
 
 3. 损失函数
 
-​			a. L2 loss
+$\qquad$  a. L2 loss
 
 $$
 l(y,y\prime)=\frac{1}{2}{(y-y\prime)}^2
