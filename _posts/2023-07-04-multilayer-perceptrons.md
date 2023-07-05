@@ -11,5 +11,22 @@ img_cdn: https://cdn.jsdelivr.net
 
 1. ![数学推导](/gh/comeback829/picture/blognote/math.jpg)
 
+2. 感知机是二分类模型，不能分类XOR问题
+
+3. 必定是非线性激活函数，否则多层后仍然是线性，不能解决问题
+
+4. 矩阵乘法
+
+   1. 点乘
+
+      *，`torch.mul()`
+
+   2. 叉乘
+
+      `torch.matmul(A,B)`(有广播机制)，`torch.mm(A,B)`(无广播机制),A@B
+
+
+	5. 
+
 ## 作业
 
