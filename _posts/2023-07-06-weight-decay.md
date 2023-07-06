@@ -19,6 +19,6 @@ img_cdn: https://cdn.jsdelivr.net
 
    [非常重要的对L1L2正则化的理解](https://www.bilibili.com/video/BV1Z44y147xA/?spm_id_from=333.999.0.0&vd_source=54a301081f5e85f9a28c11bb65310f03)
    
-   $\lambda\rightarrow\infin,W\rightarrow0$
+   $\lambda\rightarrow\infty,W\rightarrow0$
 
 ## 作业
