@@ -14,7 +14,7 @@ img_cdn: https://cdn.jsdelivr.net
         pd.read_csv(路径)##返回类型DataFrame
         DataFrame=DataFrame.drop(index=n)##删除第n行 从0开始一定要赋值回去
         ```  
-        ![drop函数细则]/gh/comeback829/picture/blognote/functiondrop.png)
+        ![drop函数细则](/gh/comeback829/picture/blognote/dropfunction.jpg)
     2. "./"：代表目前所在的目录。  
     " . ./"代表上一层目录。  
     "/"：代表根目录。    
